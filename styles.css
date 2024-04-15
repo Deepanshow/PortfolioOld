@@ -1,16 +1,54 @@
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .container {
-    width: 21cm; /* Size of A4 page width */
-    max-width: 100%; /* Ensure responsiveness */
-    margin: auto; /* Center the container horizontally */
+    width: 24cm; /* Size of A4 page width */
+    max-width: calc(100% - 4cm);; /* Ensure responsiveness */
+    margin: 0; /* Center the container horizontally */
     padding: 2cm; /* Add padding to mimic margins */
     display: flex; /* Use flexbox */
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
 }
 
+.summary-heading, .summary-paragraph {
+    margin: 0;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.custom-gap {
+    margin-top: 20px; /* Adjust the gap as needed */
+}
+
+h1, h2 {
+    margin: 0; /* Remove default margin */
+}
+
+h2 {
+    text-align: right; /* Right-align the h2 */
+}
+
 .skills {
-    display: none; /* Hide skills by default */
-    font-size: 18px; /* Increase text size */
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+    z-index: 1;
+    width: 250px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+li {
+    font-size: 16px; /* Set font size to 16 pixels */
+    font-family: Arial, sans-serif; /* Set font family */
+    color: #333; /* Set text color */
+    line-height: 1.5; /* Set line height to 1.5 times the font size */
+    font-weight: normal; /* Set font weight to normal */
 }
 
 /* Show skills when hovering over the project */
@@ -27,8 +65,12 @@ ul li:hover .skills {
     border: 1px solid #ccc; /* Border */
     border-radius: 5px; /* Border radius */
     z-index: 1; /* Ensure skills appear above other elements */
-    width: calc(100% - 40px); /* Set width to 100% minus padding */
+    width: 700px; /* Set width to 100% minus padding */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
-    max-width: 800px; /* Set max-width to resemble A4 page */
+    max-width: 900px; /* Set max-width to resemble A4 page */
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #555;
 }
