@@ -70,7 +70,7 @@ ul li:hover .skills {
     transform: translateX(-50%); /* Center horizontally */
     max-width: 900px; /* Set max-width to resemble A4 page */
 
-    font-family: "Times New Roman", Times, serif;
-    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
     color: #555;
 }
